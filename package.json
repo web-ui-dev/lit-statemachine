@@ -6,6 +6,7 @@
   "module": "lib/cjs/index.js",
   "types": "lib/esm/index.d.ts",
   "scripts": {
+    "prepublishOnly": "npm run release",
     "test": "echo \"no test specified\"",
     "tc": "npx tsc --noEmit",
     "tcw": "npm run tc -- -w",
