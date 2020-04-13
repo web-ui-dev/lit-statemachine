@@ -1,6 +1,6 @@
 {
   "name": "@web-ui/lit-statemachine",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "StateMachine for Web Components, simplified integration of Xstate with LitElement as a decorator and mixin.",
   "main": "lib/esm/index.js",
   "module": "lib/cjs/index.js",
