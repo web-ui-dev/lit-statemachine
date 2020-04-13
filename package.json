@@ -1,0 +1,50 @@
+{
+  "name": "@web-ui/lit-statemachine",
+  "version": "1.0.0",
+  "description": "StateMachine for Web Components, simplified integration of Xstate with LitElement as a decorator and mixin.",
+  "main": "lib/esm/index.js",
+  "module": "lib/cjs/index.js",
+  "types": "lib/esm/index.d.ts",
+  "scripts": {
+    "test": "echo \"no test specified\"",
+    "tc": "npx tsc --noEmit",
+    "tcw": "npm run tc -- -w",
+    "build-esm": "npx tsc -m ESNext --outDir lib/esm --declarationDir lib/esm",
+    "build-cjs": "npx tsc -m CommonJS --outDir lib/cjs --declarationDir lib/cjs",
+    "release": "npm run build-esm && npm run build-cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-ui-dev/lit-statemachine.git"
+  },
+  "keywords": [
+    "lit-element",
+    "xstate",
+    "state machine",
+    "state charts"
+  ],
+  "author": "dsadhanala@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/web-ui-dev/lit-statemachine/issues"
+  },
+  "homepage": "https://github.com/web-ui-dev/lit-statemachine#readme",
+  "dependencies": {
+    "lit-element": "^2.3.1",
+    "xstate": "^4.8.0"
+  },
+  "peerDependencies": {
+    "lit-element": "^2.3.1",
+    "xstate": "^4.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.5",
+    "@babel/preset-typescript": "^7.9.0",
+    "typescript": "^3.8.3"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
